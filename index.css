@@ -1,0 +1,361 @@
+*{
+    border:0px;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: sans-serif;
+}
+
+.colmar-logo, .nav-icons{
+    min-width: 40px;
+}
+
+.nav-container{
+    display: none;
+}
+
+.nav-mobile{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    height: 64px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0em 0em 3em;
+}
+
+.banner-texts{
+    text-align: center;
+}
+
+.banner img{
+    width: 100%;
+    margin-top: 64px;
+}
+.banner-texts{
+    background-color: lightgray;
+    padding: 32px 16px;
+    margin: 0px;
+}
+.banner-texts h2{
+    font-size: 2.6em;
+    max-width: 100%;
+    color:rgb(58, 57, 57, 0.85);
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+ h4{
+    color:rgba(53, 52, 52, 0.8);
+    font-size:1.6em;
+    text-align: left;
+    margin: 16px;
+}
+
+.banner-texts h4{
+    padding-bottom: 24px;
+    margin:0px;
+}
+
+.banner-texts button {
+    background-color: rgb(88, 88, 88);
+    color: white;
+    margin: auto;
+    padding: 8px;
+    width: 100%;
+    font-size: 20px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+ .Thesis-aside,.start-learning p,.start-learning img, .video-container p, .video-container h4, footer .terms, .info-main-text, .info-container1 img, .info-container2 img {
+    display: none;
+}
+
+.info-container2,.info-container1{
+   padding: 16px;
+   margin: 0px 16px;
+}
+
+.orientation img, .Our-campus img, .guest-lecture img{
+    width: 100%;
+    margin-top: 32px;
+}
+
+.information .mobile{
+    display: block;
+}
+
+
+p{
+    color:rgb(58, 57, 57, 0.6);
+    margin:  16px;
+    font-size: 1.3em;
+}
+
+a{
+    margin:16px;
+    text-decoration: none;
+    color: rgba(19, 19, 246, 0.8);
+    font-size: 1.2em;
+}
+
+.start-learning{
+    outline: 0.5px solid rgb(0, 0, 0, 0.1);
+    padding-bottom: 32px;
+}
+
+.start-learning h2{
+    font-size: 2.5em;
+    text-align: center;
+    padding: 32px;
+    color: rgb(0, 0, 0, 0.6);
+    margin-top: 16px;
+    font-family:sans-serif;
+}
+.start-learning h4{
+    background-color: rgb(216, 215, 215);
+    padding: 40px 16px;
+    font-size: 1.7em;
+    
+}
+.Thesis{
+    padding-bottom: 24px;
+}
+
+
+.Thesis h2{
+    margin: 32px;
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+video{
+    width: 100%;
+}
+
+footer {
+    padding: 16px;
+}
+footer p{
+    font-size: 1em;
+    color: rgb(0, 0, 0, 0.8)
+}
+
+
+@media only screen and (min-width:900px) { 
+    /* nav section */
+    .nav-mobile{
+        display: none;
+    }
+     .nav-container{
+        display: flex;
+        height: 64px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: white;
+        box-shadow: 0em 0em 3em;
+    }
+    .nav-container p{
+        color: rgb(0,0,0,.8);
+        font-weight: 510;
+        margin-left: 0px;
+    }
+    .nav-container span {
+        color:rgb(0,0,0,0.5);
+        font-weight:lighter;
+    }
+    .logo-container{
+        display: flex;
+    }
+    .nav-bigScreen{
+        display: flex;
+        list-style: none;
+    }
+    .nav-bigScreen a{
+        color: rgb(0,0,0,0.7);
+        padding-right: 24px;
+    }
+
+    /* banner section */
+    .banner{
+        background-color: lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner img {
+        width:64%;
+        padding: 32px 24px;
+    }
+    .banner-texts{
+        width:40%;
+     }
+
+     /* infomation section */
+     .info-container1{
+         display: flex;
+         align-items: center;
+     }
+     .info-first{
+         width: 40%;
+     }
+     .info-container1 img{
+         padding: 32px 24px 0px 24px;
+         width:60%;
+     }
+     .orientation,.Our-campus,.guest-lecture{
+         display: flex;
+         outline: 1px solid rgb(0, 0, 0, 0.1);
+         padding: 16px;
+         align-items: center;
+     }
+     .info-first img{
+         width:35%;
+         padding:16px;
+     }
+    .info-main-text{
+        display: block;
+        width: 60%;
+        padding: 24px;
+    }
+
+     .info-container2{
+         display: flex;
+         padding:0px;
+         align-items: flex-start;
+     }
+     .information .mobile{
+         display: none;
+     }
+     .guest-lecture-div{
+         width: 40%;
+         align-items: center;
+         justify-content:flex-start;
+         align-content: center;
+         background-color: rgb(0, 0, 0, 0.1);
+     }
+    .info-text {
+         width: 65%;
+     }
+     .info-main-text h3{
+         font-size:2.5em;
+         color: rgb(0, 0, 0, 0.7);
+         padding-bottom: 24px;
+         padding-top: 32px;
+     }
+     .info-main-text p{
+         font-size: 1.25em;
+         margin-left: 0px;
+         padding-bottom: 24px;
+     }
+     .info-main-text small{
+         color: rgb(0, 0, 0, 0.8);
+         font-size: 1.1em;
+         padding-bottom: 32px;
+     }
+     .Our-campus img{
+         margin-top: 0px;
+     }
+    .guest-lecture img{
+        width: 35%;
+        margin: 16px;
+    }
+
+    /* start learning section */
+    .start-learning{
+        background-color: rgb(0, 0, 0, 0.1);
+        margin-top: 16px;
+        padding-top:16px;
+        width: 100%;
+    }
+
+    .course-container{
+        display: flex;
+        justify-content: center;
+        padding: 32px 72px 32px 72px;
+    }
+    .course-container img,.course-container p {
+        display: block;
+        flex-grow: 0;
+        width: 100%;
+    }
+    .start-learning h4{
+        padding: 0px;
+        margin: 16px;
+        background-color: white;
+    }
+    .course-container > div{
+        background-color: white;
+        margin: 0px 16px 16px 24px;
+        flex-grow: 0;
+        width: 100%;
+    }
+    .course-container .learn-text{
+        margin: 16px 8px 12px 8px;
+        padding: 0px;
+    }
+
+
+    /* Thesis Section */
+    .Thesis h2{
+        padding: 32px ;
+    }
+    .Thesis-aside, .video-container h4, .video-container p{
+        display: block;
+    }
+    .Thesis-container,.design,.now-and-then{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .Thesis-aside{
+        width: 40%;
+    }
+
+    .design,.now-and-then{
+        align-items:center;
+        width: 100%;
+    }
+    .video-container{
+        padding:0px 24px;
+        width: 60%;
+    }
+    
+    .Thesis-aside img{
+        width :35%;
+        padding: 16px;
+    }
+    .design{
+        background-color: rgb(0, 0, 0, 0.1);
+    }
+    .Thesis-txt{
+        width: 65%;
+        margin: 0px;
+        font-size: 14px;
+    }
+    footer{
+        border-top: 1px solid rgb(0, 0, 0, 0.1);
+    }
+    .footer-texts{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer p{
+        color: rgb(0, 0, 0, 0.5);
+    }
+     footer .terms{
+        display: block;
+    }
+}
